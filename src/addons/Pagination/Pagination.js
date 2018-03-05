@@ -135,7 +135,7 @@ export default class Pagination extends Component {
     const rest = getUnhandledProps(Pagination, this.props)
 
     return (
-      <Menu {...rest} aria-label={ariaLabel} pagination role='navigation'>
+      <Menu {...rest} ariaLabel={ariaLabel} pagination role='navigation'>
         {_.map(items, ({ active, type, value }) => PaginationItem.create(this.props[type], {
           defaultProps: {
             content: value,
